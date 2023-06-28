@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/* variaveis de cores */
+
+    --cor-principal:#00d60b;
+    --cor-secundaria:#009b00;
+    --cor-terciaria:#0a4d01;
+    --cor-transparente:#00d60b09;
+    --cor-gradriente: linear-gradient(45deg,var(--cor-principal),var(--cor-secundaria),var(--cor-terciaria));
+    --cor-gradriente2: linear-gradient(45deg,var(--cor-principal),var(--cor-secundaria),var(--cor-transparente));
+}
+
+body{
+
+background-color: burlywood;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0px;
+
+}
+
+/*cabecalho */
+header{
+
+    margin: 0px;
+    padding: 5px;
+    background:var(--cor-gradriente);
+    text-align: center;
+    box-shadow: 2px 2px 25px black;
+
+}
+header>h1{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 25px;
+    padding: 2px;
+
+}
+header>h3{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 25px;
+    padding: 2px;
+    font-size: small;
+
+}
+nav{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+
+
+    &:hover a{
+        transform: rotateX(360deg);
+        background-color: tomato;
+    }
+
+}
+nav>a{
+    background-color: green;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    padding: 5px;
+    border-radius: 5px;
+    
+    transition:color 1s,background-color 1s,transform 1s;
+
+    &:hover{
+
+        color: blue;
+        
+
+    }
+
+    
+
+}
+
+/* hovers hearder */
+
+
+/* fim dos houvers */
+
+/*final do cabecalho*/
+
+/*começo do conteudo principal*/
+
+main{
+
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    padding: 8px;
+    min-width: 300px;
+    max-width: 700px;
+
+}
+#comeco>h1{
+
+font-family: 'Times New Roman', Times, serif;
+margin:8px
+
+}
+
+#artigo1>p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 50px;
+    font-stretch: expanded;
+    margin: 8px;
+
+}
+#secao2>h3{
+
+background: var(--cor-gradriente2);
+padding-left: 8px;
+margin: 8px;
+
+}
+#artigo2>p{
+
+margin: 8px;
+text-indent: 50px;
+text-align: justify;
+
+}
+
+/*organizando imagem*/
+
+.imagem-box{
+
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+.imagem>img{
+
+width: 100%;
+height: 220px;
+
+}
+
+/*finalização*/
+
+
+#secao3 > p{
+
+    text-align: justify;
+    text-indent: 50px;
+    margin: 10px;
+}
+
+/* começo imagem akali */
+
+#secao3 > div{
+
+    text-align: center;
+    padding: 2px;
+    box-shadow: inset 10px 10px 30px black;
+    border: 5px solid black;
+}
+
+
+#secao3 > div > img{
+
+    width: 100%;
+
+}
+/* fim imagem akali */
+
+
+#secao4 h3{
+
+    background: var(--cor-gradriente2);
+    padding-left: 8px;
+    margin: 8px;
+
+}
+#secao4 p{
+
+    text-align: justify;
+    text-indent: 50px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+/* começo do video */
+#video{
+
+    text-align: center;
+    padding: 2px;
+    box-shadow: inset 10px 10px 30px black;
+    border: 5px solid black;
+    min-height: 200px;
+    max-height: 500px;
+    margin-bottom: 10px;
+}
+#video >video{
+    min-height: 200px;
+    max-height: 300px;
+    width: 100%;
+
+}
+
+/* fim do video */
+
+/* inicio lista */
+
+#secao5{
+background:var(--cor-gradriente);
+box-shadow: 5px 5px 10px black;
+margin-bottom: 10px;
+border-radius: 10px 10px 10px 0px;
+padding: 5px;
+justify-content: center;
+}
+#secao5 h3{
+    background: var(--cor-gradriente2);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -5px -5px 0 -5px;
+    border-bottom: 2px solid black;
+
+
+}
+#secao5 p{
+
+    text-align: justify;
+    text-indent: 50px;
+    margin:5px
+}
+.lista{
+
+    background:var(--cor-gradriente);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3px 5px 3px 5px ;
+    border: 2px solid black;
+    margin: auto;
+    min-width: 300px;
+    max-width: 500px;
+
+}
+
+.lista ul li{
+
+    list-style-type: '\2714\0020\00A0';
+    list-style-position: inside;
+
+    }
+
+
+.lista ul li a{
+
+text-decoration: none;
+color: white;
+
+}
+/* fim da lista */
+
+/* inicio do rodape */
+
+footer{
+
+text-align: center;
+margin-top: 15px ;
+background: var(--cor-gradriente);
+padding: 15px;
+border-top: 2px solid black;
+transition: opacity 1s,color 1s,font-size 0.5s ease;
+
+&:hover{
+
+
+    opacity: 90%;
+    color:white;
+    font-size: large;
+}
+}
+
+
+/* fim do rodape */
